@@ -1,0 +1,25 @@
+﻿<Window x:Class="Halk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Halk"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="400">
+    <Grid>
+        <StackPanel Margin="10">
+            <DockPanel Margin="10">
+                <Label Content="Number А: " DockPanel.Dock="Left"/>
+                <TextBox Name ="txt_A" DockPanel.Dock="Left" Text="{Binding Path=A}"/> 
+            </DockPanel>
+            <DockPanel Margin="10">
+                <Label Content="Number B: " DockPanel.Dock="Left"/>
+                <TextBox Name ="txt_B" DockPanel.Dock="Left" Text="{Binding Path=B}"/> 
+            </DockPanel>
+            <DockPanel Margin="10">
+                <Label Content="Result: " DockPanel.Dock="Left"/>
+                <TextBlock Name ="txt_res" VerticalAlignment="Center" DockPanel.Dock="Left" Text="{Binding Path=Resur}"/> 
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</Window>
